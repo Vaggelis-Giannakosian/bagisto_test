@@ -13,7 +13,7 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: bagisto_testing
-          MYSQL_USER: bagisto
+          MYSQL_USER: homestead
           MYSQL_PASSWORD: secret
         ports:
           - 3306
