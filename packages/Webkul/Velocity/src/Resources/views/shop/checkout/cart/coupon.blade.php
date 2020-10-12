@@ -98,20 +98,3 @@
                     })
                     .catch(function(error) {
                         window.flashMessages = [{'type': 'alert-error', 'message': error.response.data.message}];
-
-                        self.$root.addFlashMessages();
-                    });
-                },
-
-                redirectIfCartPage: function() {
-                    if (this.route_name != 'shop.checkout.cart.index')
-                        return;
-
-                    setTimeout(function() {
-                        window.location.reload();
-                    }, 700);
-                }
-            }
-        });
-    </script>
-@endif
